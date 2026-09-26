@@ -1,0 +1,244 @@
+/* 1. General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #3B252B;
+    background-color: #FFF5F5;
+}
+
+/* 2. Header */
+header {
+    background-color: #650D25;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    color: #FFFFFF;
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+/* 3. Navigation bar */
+nav {
+    background-color: #861B3A;
+    padding: 14px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 12px;
+    display: inline-block;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #FFD6DF;
+    text-decoration: underline;
+}
+
+/* 4. Main content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* 5. All content sections */
+.content-section {
+    background-color: #FFFFFF;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #E4BFC8;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(101, 13, 37, 0.08);
+}
+
+/* 6. Unique About section */
+#about {
+    border-left: 6px solid #861B3A;
+}
+
+/* 7. Headings */
+h2 {
+    color: #650D25;
+    font-size: 1.7rem;
+    margin-top: 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #F0D5DC;
+}
+
+h3 {
+    color: #861B3A;
+    font-size: 1.25rem;
+}
+
+/* 8. Links */
+a {
+    color: #861B3A;
+}
+
+a:hover,
+a:focus {
+    color: #4A071A;
+}
+
+/* 9. Photo gallery */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.photo-gallery img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #E4BFC8;
+    border-radius: 10px;
+}
+
+/* 10. Audio and video */
+audio,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+video {
+    width: 100%;
+}
+
+/* 11. Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #FFFFFF;
+}
+
+th,
+td {
+    border: 1px solid #E4BFC8;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #650D25;
+    color: #FFFFFF;
+}
+
+tr:nth-child(even) {
+    background-color: #FFF0F3;
+}
+
+/* 12. Forms */
+form {
+    max-width: 600px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 16px;
+    border: 1px solid #C99AA7;
+    border-radius: 6px;
+    font: inherit;
+    background-color: #FFFFFF;
+    color: #3B252B;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #861B3A;
+    border-color: #861B3A;
+}
+
+/* Submit button */
+button,
+input[type="submit"] {
+    background-color: #650D25;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #861B3A;
+}
+
+button:focus,
+input[type="submit"]:focus {
+    outline: 3px solid #C76B85;
+    outline-offset: 3px;
+}
+
+/* 13. Footer */
+footer {
+    background-color: #650D25;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+/* 14. Mobile responsiveness */
+@media (max-width: 600px) {
+    main {
+        width: 94%;
+        margin: 15px auto;
+    }
+
+    .content-section {
+        padding: 16px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        margin: 5px 8px;
+    }
+
+    .photo-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+video {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+} 
