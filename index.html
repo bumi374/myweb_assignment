@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=deive-width,intial-scale=1.0">
+   <title>My first web page</title>
+   <link rel="stylesheet"href="css/styles.css">
+</head>
+<body>
+    
+   <header>
+      <h1>Welcome to My Student Website</h1>
+      <p>Here's a little introduction to who I am and what I have been learning.</p>
+   </header>
+
+   <nav>
+      <a href="#about">About me</a>
+      <a href="#hobbies">My hobbies</a>
+      <a href="#learning">My learning plan</a>
+      <a href="#photos">My photos</a>
+      <a href="#media">My media</a>
+      <a href="#contact">My contacts</a>
+   </nav>
+
+   <main>
+      <section id="about" class="content-section">
+        <h2><b>About me</b></h2>
+       <P>
+         My name is Bumi Lukomona, and I am a 2nd year student at Mulungushi University pursuing CyberSecurity.
+         With an intersest in technology and computing (not a nerd tech student).I enjoy developing skills
+         that will help me in my studies and future career.I am interested in web development and cybersecurity,
+         I want to learn and understand how websites are created, how they work and how they are  kept secure.
+              In my free time I love to read fictional books (cloud 9 away from reality), crocheting, braiding hair
+              and watching cooking/ documentary shows.
+              My goal is to keep learning, improving whatever i'll learn through practice and consistency.
+       </P>
+      </section>
+
+      <section id="hobbies" class="content-section">
+       <h2><b>My Hobbies</b></h2>
+       <P>Here are three activities I enjoy:</P>
+
+       <ul>
+         <li><i>Learning about technology</i></li>
+         <li><i>Crocheting</i></li>
+         <li><i>Braiding hair</i></li>
+       </ul>
+      </section>
+
+      <section id="learning" class="content-section">
+         <h2><b>My learning plan</b></h2>
+
+         <p>
+            Improving my web technology skills:
+         </p>
+      <ol>
+         <li>
+            Learn HTML elements and practice building
+            well-strcutured web pages.
+         </li>
+         <li>
+            Learn CSS and practice styling my websites with colours, fonts and layouts.
+         </li>
+         <li>
+            Learn JavaScript and build interactive features for my websites.
+         </li>
+      </ol>
+
+      <h3><b><i>My weekly Web learning plan</i></b></h3>
+
+      <table>
+         <caption><i>Weekly Web development practice</i></caption>
+
+          <thread>
+            <tr>
+                <th>Day</th>
+                <th>Topic</th>
+                <th>Practice task</th>
+            </tr>
+          </thread>
+
+          <tbody>
+            <tr>
+                <td><b><i>Monday</i></b></td>
+                <td>HTML</td>
+                <td>create a webpage with headings and paragraphs.</td>
+            </tr>
+
+            <tr>
+           <td><b><i>Wednesday</i></b></td>
+          <td>CSS</td>
+           <td>Style webpage using colours and fonts.</td>
+            </tr>
+
+            <tr>
+               <td><b><i>Friday</i></b></td>
+               <td>Javascript</td>
+               <td>Create a simple interactive button.</td>
+            </tr>
+          </tbody>
+      </table>
+
+      <p>
+         Learn more:
+         <a
+href="http://developer.mozilla.org/en-US/docs/Learn_web_development"
+       target="blank"
+       rel="noopener noreferrer">
+        Explore the MDN Web Development Guide
+        </a>
+      </p>
+      </section>
+
+      <section id="photos"class="content-section">
+         <h2><b>My photos</b></h2>
+
+         <p><b>Here are some photos from my life and interests</b></p>
+
+       <section id="photos" class="content-section">
+        <h2>My Photos</h2>
+       <p>Here are some photos from my life.</p>
+
+    <figure>
+            <img src="images/photo1.jpg"
+               alt="A selfie of myself"
+               width="200">
+               <figcaption>
+                  photo 1: Selfie kiss.
+               </figcaption>
+         </figure>
+
+         <figure>
+            <img src="images/photo2.jpeg"
+              alt="A photo representing my interest"
+              width="200">
+            <figcaption>
+               photo 2: Webtech_assignment.
+            </figcaption>
+         </figure>
+
+        <figure>
+           <img src="images/photo3.jpg"
+            alt="A photo representing my crocheting hobbie"
+            width="200">
+          <figcaption>
+             photo 3:A hook collection kit and some pretty yarn.
+           </figcaption>
+       </figure> 
+  </section>
+
+  <section id="media" class="content-section">
+   <h2><b>media</b></h2>
+
+   <h3><b><i>My introduction audio</i></b></h3>
+
+<audio controls
+       src="videos/intro%20audio.ogg"
+       style="display: block; width: 100%; height: 54px;">
+</audio>
+
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="get">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <br><br>
+
+                <label for="topic">Topic:</label>
+                <select id="topic" name="topic">
+                    <option value="general">General enquiry</option>
+                    <option value="web">Web development</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <br><br>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message"
+                          rows="5" required></textarea>
+
+                <br><br>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+            <p>
+                Note: This is a demonstration form.
+                It does not send messages or store submissions
+                on a server.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Student Website. All rights reserved.</p>
+    </footer>
+
+</body>
+    </html>   
