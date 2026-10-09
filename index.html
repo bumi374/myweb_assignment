@@ -4,7 +4,9 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=deive-width,intial-scale=1.0">
    <title>My first web page</title>
+
    <link rel="stylesheet"href="css/styles.css">
+   <script src="js/script.js"defer></script> 
 </head>
 <body>
     
@@ -23,6 +25,24 @@
    </nav>
 
    <main>
+    <section class="intro">
+      <h2>Welcome To My Portfolio</h2>
+      <p>
+         Hello, i'm Bumi, a second year student studying CyberSecurity at
+         Mulungushi University.So far this semester I have being developing my skills in technology,
+         programming and web development.
+      </p>
+      <a href="#projects" class="button">
+         view my projects
+         </a>
+ 
+      <button type="button" id="theme-toggle" class="theme-button">
+    Dark Mode
+    light Mode
+</button>
+   </section>
+
+
       <section id="about" class="content-section">
         <h2><b>About me</b></h2>
        <P>
@@ -100,6 +120,57 @@
           </tbody>
       </table>
 
+<section id="projects">
+    <h2><b>My Projects</b></h2>
+    <label for="project-search">Search:</label>
+<input
+    type="search"
+    id="project-search"
+    placeholder="Type a project name...">
+
+<p id="search-feedback" aria-live="polite"></p>
+
+    <div class="card">
+        <h4><i>HTML5 and CSS</i></h4>
+        <p>Learning HTML structure and how to use each attribute and how they work.
+         Using CSS to style and layout websites.
+        </p>
+        <button type="button" class="details-toggle" aria-expanded="false">
+    Show More Details
+</button>
+<p class="project-details" hidden>
+    This project helps me practise HTML and CSS.
+</p>
+    </div>
+
+    <div class="card">
+        <h4>Web Technology</h4>
+        <p>Understanding how websites work,both in the frontend and backend.
+         How every html structure being the "put everything in order",CSS styling and organising the website
+         making everything look clean. Javascript, the backend and controlling part of the website. 
+        </p>
+        <button type="button" class="details-toggle" aria-expanded="false">
+    Show More Details
+</button>
+<p class="project-details" hidden>
+    Web technology improvements.
+</p>
+    </div>
+
+    <div class="card">
+        <h4><i>Python Programming</i></h4>
+        <p>Small programs I create while learning Python.Python is used for machine learning
+         and parts of Cybersecurity making tools.
+        </p>
+        <button type="button" class="details-toggle" aria-expanded="false">
+    Show More Details
+</button>
+<p class="project-details" hidden>
+    keep_on_practicing_python.
+</p>
+    </div>
+</section>
+
       <p>
          Learn more:
          <a
@@ -161,42 +232,39 @@ href="http://developer.mozilla.org/en-US/docs/Learn_web_development"
         <section id="contact" class="content-section">
             <h2>Contact Me</h2>
 
-            <form action="#" method="get">
+            <p><strong>Browser demonstration only — no message is sent.</strong></p>
 
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+<form id="contact-form">
+    <label for="name">Full Name:</label>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        required
+    >
+    <small id="name-error"></small>
 
-                <br><br>
+    <label for="email">Email Address:</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        required
+    >
+    <small id="email-error"></small>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+    <label for="message">Your Message:</label>
+    <textarea
+        id="message"
+        name="message"
+        required
+    ></textarea>
+    <small id="message-error"></small>
 
-                <br><br>
+    <button type="submit">Preview Message</button>
+</form>
 
-                <label for="topic">Topic:</label>
-                <select id="topic" name="topic">
-                    <option value="general">General enquiry</option>
-                    <option value="web">Web development</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <br><br>
-
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message"
-                          rows="5" required></textarea>
-
-                <br><br>
-
-                <button type="submit">Send Message</button>
-
-            </form>
-
-            <p>
-                Note: This is a demonstration form.
-                It does not send messages or store submissions
-                on a server.
-            </p>
+<div id="form-feedback" aria-live="polite"></div>
         </section>
 
     </main>
